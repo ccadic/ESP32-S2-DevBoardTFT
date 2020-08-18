@@ -1,0 +1,26 @@
+Id;Référence;Boîtier;Quantité;Désignation;Fournisseur et réf;;;;;
+1;C1,C2;C_0805;2;20pF;;;;;;
+2;C3,C5,C6;C_0805;3;100nF;;;;;;
+3;C4,C7,C8;C_0805;3;10uF;;;;;;
+4;J1;USB_Micro-B_HandSoldering;1;USB_B_Mini;;;;;;
+5;R1,R2,R4;R_0805;3;0R;;;;;;
+6;R3;R_0805;1;10k;;;;;;
+7;SW1;SW_SPST_B3U-1000P;1;SW_Push;;https://www.digikey.fr/product-detail/fr/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357;;;;
+8;SW2;SW_SPDT_PCM12;1;Boot;;https://www.digikey.fr/product-detail/fr/c-k/PCM12SMTR/401-2016-1-ND/1640125;;;;
+9;U1;SOT-223-3_TabPin2;1;AP1117-33;;;;;;
+10;U2;esp32-s2-wrooom;1;esp32-s2-wroom;;https://fr.aliexpress.com/item/4001098252354.html;;;;
+11;J2;Socket_Strip_Straight_1x16_Pitch1.27mm;0;Cnx1;;;;;;
+12;J3;Socket_Strip_Straight_1x24_Pitch1.27mm;0;Con2;;;;;;
+13;D1;LED_WS2812B-PLCC4;1;WS2812B;;https://fr.aliexpress.com/item/32826552621.html;;;;
+14;R5;R_0805;1;470;;;;;;
+15;C9,C10;C_0805;2;4.7uF;;;;;;
+16;D2;SOT-23;1;BAT54C;;https://fr.aliexpress.com/item/4001112729468.html;;;;
+17;D3;LED_0805_HandSoldering;1;Charge;;;;;;
+18;J4;JST_PH_S2B-PH-SM4-TB_02x2.00mm_Angled;1;Conn_01x02_Female;;https://fr.aliexpress.com/item/32806124462.html;;;;2 PINS JST ANGLED
+19;R6;R_0805;1;2k;;;;;;
+20;R7;R_0805;1;470R;;;;;;
+21;U3;SOT-23-5_HandSoldering;1;MCP73831-2-OT;;;;;;
+22;U4;240240TFT;1;240x240TFT;;https://fr.aliexpress.com/item/32904333824.html;;;;Attached to PCB with 2 sides adhesive tape
+23;SW3;SW_SPDT_PCM12;1;ON;;https://www.digikey.fr/product-detail/fr/c-k/PCM12SMTR/401-2016-1-ND/1640125;;;;
+;;;;;;;;;;
+;;;29;;;;;;;
