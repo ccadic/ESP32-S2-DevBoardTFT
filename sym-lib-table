@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name esp32-s2)(type Legacy)(uri ${KIPRJMOD}/LIBS/esp32-s2.lib)(options "")(descr ""))
-  (lib (name ESP32-S2-WROOM-rescue)(type Legacy)(uri ${KIPRJMOD}/ESP32-S2-WROOM-rescue.lib)(options "")(descr ""))
-)
