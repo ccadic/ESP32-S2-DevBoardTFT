@@ -1,0 +1,99 @@
+
+(rules PCB ESP32-S2-WROOM
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 465)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-antenne" "Via[0-1]_800:400_um" antenne
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    antenne "Via[0-1]_800:400_um-antenne"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND /3.3v /VUSB /IO0 "/DC_DISP" /U1TXD /U1RXD /SCL
+    /SDA /IO1 /IO2 /IO3 /IO4 /IO5 /IO6 /IO7
+    /IO8 /IO9 /IO10 /IO11 /IO12 /IO13 /IO15 /IO16
+    /IO21 /IO26 /IO33 /IO34 /IO35 /IO36 /IO37 /IO38
+    /IO39 /IO42 /TXD0 /RXD0 /IO45 /IO46 "Net-(J21-Pad1)" "Net-(J21-Pad2)"
+    "Net-(J21-Pad3)" "Net-(J21-Pad4)" "Net-(J21-Pad5)" "Net-(J23-Pad1)" "Net-(J23-Pad2)" "Net-(J23-Pad3)" "Net-(J23-Pad4)" "Net-(J23-Pad5)"
+    "Net-(J23-Pad6)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class antenne
+    "Net-(J22-Pad1)"
+    (clearance_class antenne)
+    (via_rule antenne)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
