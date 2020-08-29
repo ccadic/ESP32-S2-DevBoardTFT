@@ -13,7 +13,7 @@ We wanted something extremely easy to use therefore fully compatible with ARDUIN
 Features & Specifications
 
 •	Processing:
-    o	32-bit processor operating at 240 MHz
+    o	32-bit esp32 processor operating at 240 MHz
     o	4 MB SPI flash
 
 •	Wireless:
