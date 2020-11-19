@@ -5,7 +5,9 @@ BREAKING NEWS !!!!! We started a Crowdsupply campaign because of many requests. 
 
 
 Esp32-S2 dev board with 240x240 IPS display
+
 ![alt text](https://github.com/ccadic/ESP32-S2-DevBoardTFT/blob/master/photo-gallery/eldiablo2s.JPG)
+
 
 
 A powerfull dev board with the ESPRESSIF™ ESP32-S2®, a high resolution display, a RGB LED, a battery charger and a bunch of GPIOs.
